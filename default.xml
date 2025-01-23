@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes -->
+    <remote name="yocto"
+            fetch="git://git.yoctoproject.org"/>
+    <remote name="oe"
+            fetch="git://git.openembedded.org"/>
+
+    <!-- Metadata -->
+    <project name="poky"
+             remote="yocto"
+             revision="refs/tags/scarthgap-5.0.6"
+             upstream="scarthgap"
+             path="src/poky"/>
+
+    <project name="meta-openembedded"
+             remote="oe"
+             revision="dda0d53326017d6758ec6bdfdaf2f484c089d13f"
+             upstream="scarthgap"
+             path="src/meta-openembedded"/>
+</manifest>
